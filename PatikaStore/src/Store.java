@@ -50,7 +50,8 @@ public class Store {
         Product product;
         while (var1.hasNext()){
             product = (Product)var1.next();
-            System.out.format("| %-2d | %-30s | &-9.1f TL | %-9s | &-10d | %-6.1f | %-11d |\n", product.getId(), product.getProductName(),product.getUnitPrice(),product.getTrademark().getName(), product.getStorage(), product.getScreenSize(), product.getRam());
+            System.out.format("| %-2d | %-30s | %-9.1f TL | %-9s | %-10d | %-6.1f | %-11d |\n", product.getId(), product.getProductName(),product.getUnitPrice(),product.getTrademark().getName(), product.getStorage(), product.getScreenSize(), product.getRam());
+
         }
 
         System.out.println("----------------------------------------------------------------------------------------------------");
@@ -62,7 +63,8 @@ public class Store {
 
         while (var1.hasNext()){
             product = (Product)var1.next();
-            System.out.format("| %-2d | %-30s | &-9.1f TL | %-9s | &-10d | %-6.1f | %-9d | %-9.1f | &-9d | %-9s |\n", product.getId(),product.getUnitPrice(),product.getTrademark().getName(), product.getStorage(), product.getScreenSize(), product.getCamera(), product.getBattery(), product.getRam(), product.getColor());
+            System.out.format("| %-2d | %-30s | %-9.1f TL | %-9s | %-10d | %-6.1f | %-9d | %-9.1f | %-9d |\n", product.getId(), product.getProductName(),product.getUnitPrice(),product.getTrademark().getName(), product.getStorage(), product.getScreenSize(), product.getCamera(), product.getBattery(), product.getRam());
+
 
         }
 
